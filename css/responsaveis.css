@@ -1,0 +1,60 @@
+table.table-task{
+    width: 100%;
+}
+
+.table-task .column1{
+    width: 80%;
+}
+
+.table-task .column2{
+    
+    text-align: center;
+}
+
+.title-task{
+    font-size: 24px;
+    color: #D90368;
+}
+
+.option-task{
+    padding: 10px;
+}
+
+.description-task{
+    font-size: 14px;
+    color: #6D6D93;
+}
+.nickname-user-task{
+    color:#2E294E;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-button{
+    background-color: #64EA07;
+    width: auto;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 40px;
+    border-radius: 30px;
+    margin: 0px 5px;
+    float: right;
+}
+.content-task .column1{
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.title-description{
+    color:black;
+}
+
+@media (min-width:700px) {
+    .options {
+        margin-right: 380px
+    }
+}
+
+.checked {
+    color: orange;
+}
