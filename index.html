@@ -37,17 +37,65 @@
                     <div class="options">
                         <div style="padding: 0px 50px 80px 50px;">
                             <div class="top-button">
-                                <a style="color:white" href="" data-toggle="modal" data-target="#myModal">
-                                    <i class="fa fa-plus"></i>
-                                </a>
-                            </div>
-                            <div class="top-button">
                                 <a style="color:white" href="" data-toggle="modal" data-target="#myModal2">
                                     <i class="fa fa-play"></i>
                                 </a>
                             </div>
+                            <div class="top-button">
+                                <a style="color:white" href="" data-toggle="modal" data-target="#myModal">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <div>
+                        <div class="_3MT-S">
+                            <div>
+                                <div class="_2hEQd _1E3L7">
+                                    <table class="table-task">
+                                        <tr class="header-task">
+                                            <td class="column1">
+                                                <span class="title-task">Ler um livro</span>
+                                            </td>
+                                            <td class="column2">
+                                                <a class="option-task" href="">
+                                                    <i class="fa fa-pencil fa-2x"></i>
+                                                </a>
+                                                <a class="option-task" href="">
+                                                    <i class="fa fa-trash fa-2x"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="content-task">
+                                            <td class="column1">
+                                                <div style="width: 100%;height: 100%;">
+                                                    <span class="title-description">Descrição:</span>
+                                                    <span class="description-task">Mochileiro das Galáxias</span>
+                                                </div>
+                                            </td>
+                                            <td class="column2">
+                                                <img class="avatar-user-task" src="images/avatar/filhao.png" alt="">
+                                            </td>
+                                        </tr>
+                                        <tr class="footer-task">
+                                            <td class="column1" style="color: gray;">
+                                                <span class="fa fa-star fa-2x checked"></span>
+                                                <span class="fa fa-star fa-2x checked"></span>
+                                                <span class="fa fa-star fa-2x checked"></span>
+                                                <span class="fa fa-star fa-2x checked"></span>
+                                                <span class="fa fa-star fa-2x"></span>
+                                            </td>
+                                            <td class="column2">
+                                                <span class="nickname-user-task">Filhão</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <br>
                     <div>
                         <div class="_3MT-S">
                             <div>
@@ -99,7 +147,7 @@
         </div>
     </div>
     <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog">  
 
             <!-- Modal content-->
             <div class="modal-content">
@@ -109,43 +157,28 @@
                 </div>
                 <div class="modal-body">
                     <div class="_2hEQd _1E3L7">
-                        <table class="table-task">
-                            <tr class="header-task">
-                                <td class="column1">
-                                    <span class="title-task">Arrumar a Cama</span>
-                                </td>
-                                <td class="column2">
-                                    <a class="option-task" href="">
-                                        <i class="fa fa-pencil fa-2x"></i>
-                                    </a>
-                                    <a class="option-task" href="">
-                                        <i class="fa fa-trash fa-2x"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="content-task">
-                                <td class="column1">
-                                    <div style="width: 100%;height: 100%;">
-                                        <span class="title-description">Descrição:</span>
-                                        <span class="description-task">Todos os dias antes da aula</span>
-                                    </div>
-                                </td>
-                                <td class="column2">
-                                    <img class="avatar-user-task" src="images/avatar/filhona.png" alt="">
-                                </td>
-                            </tr>
-                            <tr class="footer-task">
-                                <td class="column1" style="color: gray;">
-                                    <span class="fa fa-star fa-2x checked"></span>
-                                    <span class="fa fa-star fa-2x checked"></span>
-                                    <span class="fa fa-star fa-2x checked"></span>
-                                    <span class="fa fa-star fa-2x"></span>
-                                    <span class="fa fa-star fa-2x"></span>
-                                </td>
-                                <td class="column2">
-                                    <span class="nickname-user-task">Filhota</span>
-                                </td>
-                            </tr>
+                        <input type="text" class="form-control" id="usr" placeholder="Nome da atividade">
+                        <br><br>
+                        <label for="comment">Descrição:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <br><br>
+                        <table style="text-align: center;">
+                        <tr>
+                            <td>
+                                <img class="avatar-user-task" src="images/avatar/filhona.png" alt=""> 
+                            </td>
+                            <td>
+                               <img class="avatar-user-task" src="images/avatar/filhao.png" alt=""> 
+                            </td>
+                        </tr>
+                        <tr>
+                           <td style="text-align: center;">
+                            <span class="nickname-user-task">Filhota</span>
+                           </td>
+                           <td style="text-align: center;">
+                            <span class="nickname-user-task">Filhao</span>
+                           </td>
+                        </tr>
                         </table>
                     </div>
                 </div>
@@ -169,44 +202,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="_2hEQd _1E3L7">
-                        <table class="table-task">
-                            <tr class="header-task">
-                                <td class="column1">
-                                    <span class="title-task">Arrumar a Cama</span>
-                                </td>
-                                <td class="column2">
-                                    <a class="option-task" href="">
-                                        <i class="fa fa-pencil fa-2x"></i>
-                                    </a>
-                                    <a class="option-task" href="">
-                                        <i class="fa fa-trash fa-2x"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr class="content-task">
-                                <td class="column1">
-                                    <div style="width: 100%;height: 100%;">
-                                        <span class="title-description">Descrição:</span>
-                                        <span class="description-task">Todos os dias antes da aula</span>
-                                    </div>
-                                </td>
-                                <td class="column2">
-                                    <img class="avatar-user-task" src="images/avatar/filhona.png" alt="">
-                                </td>
-                            </tr>
-                            <tr class="footer-task">
-                                <td class="column1" style="color: gray;">
-                                    <span class="fa fa-star fa-2x checked"></span>
-                                    <span class="fa fa-star fa-2x checked"></span>
-                                    <span class="fa fa-star fa-2x checked"></span>
-                                    <span class="fa fa-star fa-2x"></span>
-                                    <span class="fa fa-star fa-2x"></span>
-                                </td>
-                                <td class="column2">
-                                    <span class="nickname-user-task">Filhota</span>
-                                </td>
-                            </tr>
-                        </table>
+                        <h4 style="color:blue" class="modal-title title-task">Tempo (dias)</h4>
+                        <input type="text" class="form-control" id="usr" placeholder="3">
+                        <br><br>
+                        <img class="avatar-user-task" src="images/avatar/premio.png" alt=""> 
+                        <br><br>
+                        <label for="comment">Descrição:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <br><br>
                     </div>
                 </div>
                 <div class="modal-footer">
