@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/responsaveis.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -17,16 +20,32 @@
                 <div class="NbGcm">
                     <a style="color:white;font-weight: bold;font-size: 35px;margin-bottom: 10px;" href="/">Upei</a>
                     <ul class="zDDkq">
-                        <li class="_2rS3d"><a data-test="home-nav" class="uWoNt _2QyU5" href="/">Sprint</a></li>
-                        <li class="_2rS3d"><a data-test="vocab-nav" class="_2QyU5" href="/words">Histórico</a></li>
-                        <li class="_2rS3d"><a data-test="discussion-nav" class="_2QyU5" href="/discussion">Ajuda</a></li>
+                        <li class="_2rS3d">
+                            <a data-test="home-nav" class="uWoNt _2QyU5" href="/">Sprint</a>
+                        </li>
+                        <li class="_2rS3d">
+                            <a data-test="vocab-nav" class="_2QyU5" href="/words">Histórico</a>
+                        </li>
+                        <li class="_2rS3d">
+                            <a data-test="discussion-nav" class="_2QyU5" href="/discussion">Ajuda
+                                <i class="fa fa-question-circle-o"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="LFfrA _3MLiB">
                     <div class="options">
                         <div style="padding: 0px 50px 80px 50px;">
-                            <div class="top-button"><i class="fa fa-plus"></i></div>
-                            <div class="top-button"><i class="fa fa-play"></i></div>
+                            <div class="top-button">
+                                <a style="color:white" href="" data-toggle="modal" data-target="#myModal">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                            <div class="top-button">
+                                <a style="color:white" href="" data-toggle="modal" data-target="#myModal2">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -39,8 +58,12 @@
                                                 <span class="title-task">Arrumar a Cama</span>
                                             </td>
                                             <td class="column2">
-                                                <a class="option-task" href=""><i class="fa fa-pencil fa-2x"></i></a>
-                                                <a class="option-task" href=""><i class="fa fa-trash fa-2x"></i></a>
+                                                <a class="option-task" href="">
+                                                    <i class="fa fa-pencil fa-2x"></i>
+                                                </a>
+                                                <a class="option-task" href="">
+                                                    <i class="fa fa-trash fa-2x"></i>
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr class="content-task">
@@ -73,6 +96,127 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title title-task">Nova Atividade</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="_2hEQd _1E3L7">
+                        <table class="table-task">
+                            <tr class="header-task">
+                                <td class="column1">
+                                    <span class="title-task">Arrumar a Cama</span>
+                                </td>
+                                <td class="column2">
+                                    <a class="option-task" href="">
+                                        <i class="fa fa-pencil fa-2x"></i>
+                                    </a>
+                                    <a class="option-task" href="">
+                                        <i class="fa fa-trash fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="content-task">
+                                <td class="column1">
+                                    <div style="width: 100%;height: 100%;">
+                                        <span class="title-description">Descrição:</span>
+                                        <span class="description-task">Todos os dias antes da aula</span>
+                                    </div>
+                                </td>
+                                <td class="column2">
+                                    <img class="avatar-user-task" src="images/avatar/filhona.png" alt="">
+                                </td>
+                            </tr>
+                            <tr class="footer-task">
+                                <td class="column1" style="color: gray;">
+                                    <span class="fa fa-star fa-2x checked"></span>
+                                    <span class="fa fa-star fa-2x checked"></span>
+                                    <span class="fa fa-star fa-2x checked"></span>
+                                    <span class="fa fa-star fa-2x"></span>
+                                    <span class="fa fa-star fa-2x"></span>
+                                </td>
+                                <td class="column2">
+                                    <span class="nickname-user-task">Filhota</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button style="background-color: #F44336; border:none; font-weight: bold" type="button" class="btn btn-danger" data-dismiss="modal">
+                        <i class="fa fa-remove"></i> Cancelar</button>
+                    <button style="background-color: #64EA07; border:none; font-weight: bold" type="button" class="btn btn-success" data-dismiss="modal">
+                        <i class="fa fa-check"></i> Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title title-task">Iniciar Sprint</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="_2hEQd _1E3L7">
+                        <table class="table-task">
+                            <tr class="header-task">
+                                <td class="column1">
+                                    <span class="title-task">Arrumar a Cama</span>
+                                </td>
+                                <td class="column2">
+                                    <a class="option-task" href="">
+                                        <i class="fa fa-pencil fa-2x"></i>
+                                    </a>
+                                    <a class="option-task" href="">
+                                        <i class="fa fa-trash fa-2x"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="content-task">
+                                <td class="column1">
+                                    <div style="width: 100%;height: 100%;">
+                                        <span class="title-description">Descrição:</span>
+                                        <span class="description-task">Todos os dias antes da aula</span>
+                                    </div>
+                                </td>
+                                <td class="column2">
+                                    <img class="avatar-user-task" src="images/avatar/filhona.png" alt="">
+                                </td>
+                            </tr>
+                            <tr class="footer-task">
+                                <td class="column1" style="color: gray;">
+                                    <span class="fa fa-star fa-2x checked"></span>
+                                    <span class="fa fa-star fa-2x checked"></span>
+                                    <span class="fa fa-star fa-2x checked"></span>
+                                    <span class="fa fa-star fa-2x"></span>
+                                    <span class="fa fa-star fa-2x"></span>
+                                </td>
+                                <td class="column2">
+                                    <span class="nickname-user-task">Filhota</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button style="background-color: #F44336; border:none; font-weight: bold" type="button" class="btn btn-danger" data-dismiss="modal">
+                        <i class="fa fa-remove"></i> Cancelar</button>
+                    <button style="background-color: #64EA07; border:none; font-weight: bold" type="button" class="btn btn-success" data-dismiss="modal">
+                        <i class="fa fa-play"></i> Iniciar</button>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
