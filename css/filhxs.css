@@ -1,0 +1,103 @@
+table.table-task{
+    width: 100%;
+}
+
+.table-task .column1{
+    width: 80%;
+}
+
+.table-task .column2{
+    
+    text-align: center;
+}
+
+.title-task{
+    font-size: 24px;
+    color: #D90368;
+}
+
+.option-task{
+    padding: 10px;
+}
+
+.description-task{
+    font-size: 14px;
+    color: #6D6D93;
+}
+.nickname-user-task{
+    color:#2E294E;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+button.sendButton{
+    background-color: #20a8e9;
+    margin-top:30px;
+    color: white;
+}
+
+.btn-iniciar-sprint{
+    width: auto;
+    border-radius: 40px;
+    background-color: #64EA07;
+    border: solid 7px white;
+    padding: 5px 10px;
+    position:relative;
+    left: 90px;
+    bottom: 35px;
+    float: left;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    display: block;
+}
+
+.avatar{
+    float: left;
+    padding: 25px;
+    background-color: #20a8e9;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .04);
+}
+
+.avatar img{
+    border-radius: 100px;
+}
+
+.avatar img:hover{
+    cursor: pointer;
+}
+
+.top-button{
+    background-color: #64EA07;
+    width: auto;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 40px;
+    border-radius: 30px;
+    margin: 0px 5px;
+    float: right;
+}
+.content-task .column1{
+    text-align: left;
+    vertical-align: text-top;
+}
+
+.title-description{
+    color:black;
+}
+
+.options{
+    text-align: right;
+    color: gray;
+    font-size: 40px;
+    padding-right: 40px;
+    font-weight: bold;
+}
+
+.checked {
+    color: orange;
+}
+
+.icon-points{
+    color: #ffeb3b;
+    font-weight: bold;
+}
