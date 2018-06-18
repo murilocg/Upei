@@ -53,6 +53,19 @@ button.sendButton{
     display: block;
 }
 
+.btn-sprint{
+    width: auto;
+    border-radius: 40px;
+    border: solid 7px white;
+    padding: 5px 10px;
+    position:relative;
+    left: 90px;
+    bottom: 35px;
+    float: left;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    display: block;
+}
+
 .avatar{
     float: left;
     padding: 25px;
