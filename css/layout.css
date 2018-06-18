@@ -432,11 +432,6 @@ ul.menubar-bottom {
     padding: 0px 120px;
 }
 
-ul.menubar-bottom li.option-text {
-    font-size: 35px;
-    font-weight: bold;
-    padding-top: 10px;
-}
 
 @media(max-width:700px) {
     ul.menubar-top {
@@ -446,11 +441,6 @@ ul.menubar-bottom li.option-text {
 
     ul.menubar-bottom {
         padding: 0px 10px;
-    }
-
-    ul.menubar-bottom li.option-text {
-        font-size: 30px;
-        padding-top: 20px;
     }
 }
 
@@ -515,8 +505,6 @@ ul.menubar-bottom li.option-text {
     color: #fff;
     cursor: pointer;
     display: block;
-    font-size: 15px;
-    font-weight: 700;
     margin: 0 2px;
     padding: 8px 15px
 }
