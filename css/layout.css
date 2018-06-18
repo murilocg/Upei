@@ -409,7 +409,7 @@ ul.menubar-top li.icon {
     color: #4ebdd4;
 }
 
-.left-separator{
+.left-separator {
     border-left: 1px solid gray;
 }
 
@@ -605,5 +605,25 @@ ul.menubar-bottom li.option-text {
 
 ul.menubar-top i.fa {
     font-size: 40px;
-    color:#4ebdd4;
+    color: #4ebdd4;
+}
+
+.btn.btn-success {
+    background-color: #64EA07;
+    border: none;
+    font-weight: bold
+}
+
+.pattern-color-green{
+    background-color: #64EA07;
+}
+
+.pattern-color-red{
+    background-color: #F44336;
+}
+
+.btn.btn-danger {
+    background-color: #F44336;
+    border: none;
+    font-weight: bold
 }

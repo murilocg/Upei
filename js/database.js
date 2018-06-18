@@ -99,6 +99,14 @@ function findAtividade(key, callback){
     firebase.database().ref("/atividade/" + key ).once("value").then(callback);
 }
 
+function findSprintFilhx(key, callback){
+    var sprint = {
+        state: 0,
+        timer: "14:10:22"
+    };
+    callback(sprint);
+}
+
 function loadRotas(zoom, renderFunction) {
     var a;
     if (zoom > 16) {
@@ -108,6 +116,14 @@ function loadRotas(zoom, renderFunction) {
     } else {
         firebase.database().ref('/rotas/').orderByChild("periculosidade").endAt(-1).once('value', renderFunction);
     }
+}
+
+function startSprint(key){
+    
+}
+
+function stopSprint(key){
+    
 }
 
 function buscarTodasRotasNaRua(c) {

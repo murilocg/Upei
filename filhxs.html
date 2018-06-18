@@ -31,8 +31,8 @@
                                 <img id="img-avatar" src="#" alt="" height="90px;">
                             </div>
                             <div>
-                                <button class="btn-iniciar-sprint">
-                                <i class="fa fa-play fa-2x"></i>
+                                <button id="change-state-sprint" class="btn-sprint" onclick="changeStateSprint();">
+                                <i></i>
                             </button>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
                         <div>
                             <div class="options">
                                 <div>
-                                    <span id="timer">14:10:22</span>
+                                    <span id="timer"></span>
                                 </div>
                             </div>
                             <div id="list-task">
@@ -84,8 +84,50 @@
                         </div>
                     </div>
                 </div>
-
             </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-comentario" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title title-task">Comentário</h4>
+                </div>
+                <div class="modal-body">
+                    <input id="atividade-key" type="hidden">
+                    <textarea class="form-control" rows="5" id="comentario"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <i class="fa fa-remove"></i> Cancelar</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="addComentario();">
+                        <i class="fa fa-play"></i> Salvar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="confirm-send-task" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                       <input type="hidden" id="confirm-send-task-atividade">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title title-task">Confirmação</h4>
+                </div>
+                <div class="modal-body">
+                    <input id="atividade-key" type="hidden">
+                    <h4>Opa!Você acabou mesmo?</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <i class="fa fa-remove"></i>Não</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="sendTask();">
+                        <i class="fa fa-play"></i>Sim</button>
+                </div>
+            </div>
+
         </div>
     </div>
     <script src="js/filhxs.js"></script>
