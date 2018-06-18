@@ -16,6 +16,7 @@ class Atividade {
         this.filhx = filhx;
         this.responsavel = responsavel;
         this.estado = estado;
+        this.avaliacao = 0;
     }
 }
 
@@ -26,13 +27,14 @@ class Responsavel {
     }
 }
 
-class Filhx{
-    constructor(key, nome, levelName, points, path) {
+class Filhx {
+    constructor(key, nome, levelName, points, path, responsavel) {
         this.key = key;
         this.nome = nome;
         this.levelName = levelName;
         this.points = points;
         this.path = path;
+        this.responsavel = responsavel;
     }
 }
 
@@ -41,6 +43,13 @@ function salvarFilhx(filhx, callback) {
         filhx.key = newKey("/filhx/");
     }
     update("/filhx/", filhx, callback);
+}
+
+function saveSprint(sprint, callback){
+    if(sprint.key == "0"){
+        sprint.key = newKey("/sprintresponsavel/");
+    }
+    update("/sprintresponsavel/", sprint, callback);
 }
 
 function salvarResponsavel(responsavel, callback) {
@@ -57,15 +66,19 @@ function salvarAtividade(atividade, callback) {
     update("/atividade/", atividade, callback);
 }
 
-function salvarComentario(comentario, callback){
+function salvarComentario(comentario, callback) {
     if (comentario.key == "0") {
         comentario.key = newKey("/comentario/");
     }
     update("/comentario/", comentario, callback);
 }
 
-function findAtividadesDoUsuario(filhx, callback){
+function findAtividadesDoFilhx(filhx, callback) {
     firebase.database().ref("/atividade/").orderByChild("filhx").equalTo(filhx).once("value", callback);
+}
+
+function findAtividadesDoResponsavel(key, callback) {
+    firebase.database().ref("/atividade/").orderByChild("responsavel").equalTo(key).once("value", callback);
 }
 
 function newKey(path) {
@@ -73,8 +86,8 @@ function newKey(path) {
 }
 
 function update(path, data, callback) {
-    firebase.database().ref(path + data.key).update(data).then(function(){
-        if(callback)
+    firebase.database().ref(path + data.key).update(data).then(function () {
+        if (callback)
             callback(data);
     });
 }
@@ -91,20 +104,32 @@ function buscarPosts(limite, callback) {
     firebase.database().ref("/posts/").limitToLast(limite).once("value", callback);
 }
 
-function findFilhx(key, callback){
-    firebase.database().ref("/filhx/" + key ).once("value").then(callback);
+function findFilhx(key, callback) {
+    firebase.database().ref("/filhx/" + key).once("value").then(callback);
 }
 
-function findAtividade(key, callback){
-    firebase.database().ref("/atividade/" + key ).once("value").then(callback);
+function findResponsavel(key, callback) {
+    firebase.database().ref("/responsavel/" + key).once("value").then(callback);
 }
 
-function findSprintFilhx(key, callback){
+function findAtividade(key, callback) {
+    firebase.database().ref("/atividade/" + key).once("value").then(callback);
+}
+
+function findFilhxResponsavel(key, callback){
+  firebase.database().ref("/filhx/").orderByChild("responsavel").equalTo(key).once("value", callback);  
+}
+
+function findSprintFilhx(key, callback) {
     var sprint = {
         state: 0,
         timer: "14:10:22"
     };
     callback(sprint);
+}
+
+function findSprintReponsavel(key, callback) {
+    firebase.database().ref("/sprintresponsavel/").orderByChild("responsavel").equalTo(key).once("value", callback);
 }
 
 function loadRotas(zoom, renderFunction) {
@@ -118,12 +143,16 @@ function loadRotas(zoom, renderFunction) {
     }
 }
 
-function startSprint(key){
-    
+function startSprint(key) {
+
 }
 
-function stopSprint(key){
-    
+function stopSprint(key) {
+
+}
+
+function removerAtividade(key, callback) {
+    firebase.database().ref("/atividade/" + key).remove().then(callback);
 }
 
 function buscarTodasRotasNaRua(c) {

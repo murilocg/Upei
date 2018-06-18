@@ -117,3 +117,18 @@ button.sendButton{
     color: #ffeb3b;
     font-weight: bold;
 }
+
+ul.menubar-bottom li.option-text {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 10px;
+    color:white;
+}
+
+
+@media(max-width:700px) {
+    ul.menubar-bottom li.option-text {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+}

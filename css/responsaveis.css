@@ -1,52 +1,56 @@
-table.table-task{
+table.table-task {
     width: 100%;
 }
 
-.table-task .column1{
+.table-task .column1 {
     width: 80%;
 }
 
-.table-task .column2{
-    
+.table-task .column2 {
+
     text-align: center;
 }
 
-.title-task{
+.title-task {
     font-size: 24px;
     color: #D90368;
+    font-weight: bold;
 }
 
-.option-task{
+.option-task {
     padding: 10px;
 }
 
-.description-task{
+.description-task {
     font-size: 14px;
     color: #6D6D93;
 }
-.nickname-user-task{
-    color:#2E294E;
+
+.nickname-user-task {
+    color: #2E294E;
     font-size: 14px;
     font-weight: bold;
 }
 
-.top-button{
-    background-color: #64EA07;
+.top-button {
     width: auto;
     text-align: center;
-    padding: 10px 15px;
-    font-size: 40px;
-    border-radius: 30px;
+    padding: 10px 20px;
+    border:5px solid white;
+    font-size: 35px;
+    border-radius: 40px;
     margin: 0px 5px;
     float: right;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
 }
-.content-task .column1{
+
+.content-task .column1 {
     text-align: left;
     vertical-align: text-top;
 }
 
-.title-description{
-    color:black;
+.title-description {
+    color: black;
 }
 
 @media (min-width:700px) {
@@ -57,4 +61,35 @@ table.table-task{
 
 .checked {
     color: orange;
+}
+
+ul.menubar-bottom li.option-text {
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+ul.menubar-bottom li.option-text a {
+    color: white;
+    padding: 10px 15px;
+}
+
+@media(max-width:700px) {
+    ul.menubar-bottom li.option-text {
+        font-size: 20px;
+    }
+
+    ul.menubar-bottom li.option-text a {
+        color: white;
+        padding: 10px 15px;
+    }
+}
+
+.avatar-user-task-selecionado{
+    border:3px solid #64EA07;
+}
+
+.sprint-xp{
+    font-size: 65px;
+    font-weight: bold;
+    border: none;
 }

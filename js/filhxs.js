@@ -78,8 +78,8 @@ function loadInfoUser() {
 
 function renderTasks() {
     $("#list-task").html("");
-    findAtividadesDoUsuario(filhx.key, function (atividades) {
-        atividades.forEach(function (child) {
+    findAtividadesDoFilhx(filhx.key, function (atividades) {
+        atividades.forEach(function (child) { 
             var atividade = child.val();
             var at = $("<div></div>").addClass("_2hEQd _1E3L7").attr("id", "task_" + atividade.key);
             if (atividade.estado == 1)
@@ -118,6 +118,7 @@ function renderTasks() {
             table.append(tr);
             at.append(table);
             $("#list-task").append(at);
+            
         });
     });
 }
