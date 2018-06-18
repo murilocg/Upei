@@ -406,6 +406,11 @@ ul.menubar-top {
 
 ul.menubar-top li.icon {
     padding: 10px;
+    color: #4ebdd4;
+}
+
+.left-separator{
+    border-left: 1px solid gray;
 }
 
 .right {
@@ -520,10 +525,14 @@ ul.menubar-bottom li.option-text {
     margin: 45px 0 0
 }
 
+._3MLiB {
+    margin: 180px auto 0!important;
+}
+
+
 @media (min-width:700px) {
     ._3MLiB {
         cursor: default;
-        margin: 50px auto 0!important;
         max-width: 1140px;
         min-width: 980px
     }
@@ -584,8 +593,6 @@ ul.menubar-bottom li.option-text {
     }
 }
 
-
-
 .title-app {
     font-size: 40px;
     color: #2E294E;
@@ -598,4 +605,5 @@ ul.menubar-bottom li.option-text {
 
 ul.menubar-top i.fa {
     font-size: 40px;
+    color:#4ebdd4;
 }
